@@ -1,31 +1,36 @@
-// lưu localStorage value là chuỗi
-const saveStringLocal = (key, value) => {
+import Swal from 'sweetalert2'
 
-    localStorage.setItem(key, value);
+const getLocalStorage = (key) => {
+    try {
+        if (JSON.parse(localStorage.getItem(key))) {
+            return JSON.parse(localStorage.getItem(key))
+        }
+    } catch (error) {
+        // Trường hợp người dùng sửa localStorage dẫn đến sai lỗi JSON.parse
+        removeLocalStorage(key)
+        return null
+    }
 }
 
-// lưu localStorage value là chuỗi
-const getStringLocal = (key) => {
-
-    return localStorage.getItem(key);
+const setLocalStorage = (key, value) => {
+    localStorage.setItem(key, JSON.stringify(value))
 }
 
-// lưu localStorage value là object hoặc list object
-const saveLocal = (key, value) => {
-
-    let data = JSON.stringify(value);
-    localStorage.setItem(key, data);
+const removeLocalStorage = (key) => {
+    localStorage.removeItem(key)
 }
 
-// lấy localStorage
-const getLocal = (key) => {
-    let data = JSON.parse(localStorage.getItem(key));
-    return data;
+// ------------------- 
+
+const SwalConfig = (title, icon, showConfirmButton, timer) => {
+    return Swal.fire({
+        icon,
+        title,
+        showConfirmButton,
+        timer: timer ? timer : 1500,
+        position: 'center',
+        confirmButtonColor: '#f97316',
+    })
 }
 
-// xóa localStorage
-const removeLocal = (key) => {
-    localStorage.removeItem(key);
-}
-
-export { saveStringLocal, getStringLocal, saveLocal, getLocal, removeLocal }
+export { getLocalStorage, setLocalStorage, removeLocalStorage, SwalConfig }
