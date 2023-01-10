@@ -32,8 +32,8 @@ function App() {
           <Route path='inforUser' element={<InforUser />} />
           <Route path='login' element={<Login />} />
           <Route path='register' element={<Register />} />
-          <Route path='aboutapp' element={<AboutApp />} />
-          <Route path='news' element={<News />} />
+          {/* <Route path='aboutapp' element={<AboutApp />} />
+          <Route path='news' element={<News />} /> */}
           <Route path='booking/:id' element={<BookingTicket />} />
         </Route>
         <Route path='/admin' element={<AdminTemplate />}>

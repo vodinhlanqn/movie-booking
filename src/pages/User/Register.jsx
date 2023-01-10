@@ -9,7 +9,7 @@ import { GROUPID } from '../../utils/constant';
 
 export default function Register() {
 
-    const {navigate} = useRoute()
+    const { navigate } = useRoute()
 
     const [state, setState] = useState({
         nguoiDung: {
@@ -62,7 +62,7 @@ export default function Register() {
         try {
             await DangKy(userRegister)
             SwalConfig('Đăng ký thành công', 'success', false)
-            navigate('/login')  
+            navigate('/login')
         } catch (error) {
             SwalConfig(error.response.data.content, 'error', true, 3000)
         }
@@ -84,7 +84,7 @@ export default function Register() {
             <div className="register__overlay"></div>
             <form onSubmit={handleSubmit} className="form rounded-lg bg-white p-2 sm:px-8 sm:py-4 lg:py-6">
                 <div className='text-center mb-4'>
-                    <FontAwesomeIcon className='w-10 h-10 text-orange-500' icon={faCircleCheck} />
+                    {/* <FontAwesomeIcon className='w-10 h-10 text-orange-500' icon={faCircleCheck} /> */}
                     <h2 className='text-xl font-bold'>Đăng Ký</h2>
                 </div>
                 <div className="form-control">

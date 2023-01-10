@@ -5,7 +5,7 @@ export default function Dashboard() {
 	const nameAdmin = getLocalStorage('USER')
 	return (
 		<>
-			<h2 className='text-center font-bold text-2xl'>Hellu Admin: <span className='text-orange-600'>{nameAdmin.hoTen}</span></h2>
+			<h2 className='text-center font-bold text-2xl'>Xin chào: <span className='text-orange-600'>{nameAdmin.hoTen}</span></h2>
 			<div className='flex justify-center items-center h-full'>
 				<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" style={{ margin: 'auto', background: '#fff', display: 'block' }} width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
 					<g>

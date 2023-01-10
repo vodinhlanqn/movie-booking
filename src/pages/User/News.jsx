@@ -4,7 +4,7 @@ import { Tabs } from 'antd'
 
 export default function News() {
     const dienAnh = () => {
-        return <div className='md:my-[3rem] my-[0.5rem] md:w-[80%] mx-auto'>
+        return <div className='md:my-[3rem] my-[0.5rem] md:w-[80%] mx-auto' id='news'>
             <div className='md:flex'>
                 <div className='md:w-[50%] p-4'>
                     <img className='w-full' src="https://s3img.vcdn.vn/123phim/2020/07/tenet-cong-bo-ngay-khoi-chieu-chinh-thuc-tai-viet-nam-15959320391357.png" alt="" />

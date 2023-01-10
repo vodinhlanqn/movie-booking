@@ -4,10 +4,13 @@ import MovieList from '../../components/Home/MovieList'
 import HomeCarousel from '../../components/Home/HomeCarousel'
 import MenuCinema from '../../components/Home/MenuCinema'
 import LoadingPage from '../LoadingPage'
-import {  callApiFilm, getFilmList } from '../../redux/reducers/FilmReducer'
+import { callApiFilm, getFilmList } from '../../redux/reducers/FilmReducer'
 import { LayHeThongRapChieu } from '../../redux/reducers/CinemaReducer'
 import { history } from '../../utils/history'
 import { LayThongTinLichChieuHeThongRap } from '../../services/CinemaService'
+
+import News from './News'
+import AboutApp from './AboutApp'
 
 export default function Home() {
     const [isLoading, setIsLoading] = useState(true)
@@ -21,8 +24,8 @@ export default function Home() {
             window.scrollTo(0, 0);
         });
         dispatch(callApiFilm)
-        
-        const getApiHeThongRapChieu = async() => {
+
+        const getApiHeThongRapChieu = async () => {
             try {
                 const apiHeThongRap = await LayThongTinLichChieuHeThongRap()
                 dispatch(LayHeThongRapChieu(apiHeThongRap.data.content))
@@ -40,6 +43,8 @@ export default function Home() {
                 <HomeCarousel />
                 <MovieList arrFilm={arrFilm} />
                 <MenuCinema heThongRapChieu={heThongRapChieu} />
+                <News />
+                <AboutApp />
             </>}
         </div>
     )

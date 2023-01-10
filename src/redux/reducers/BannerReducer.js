@@ -1,24 +1,48 @@
 import { createSlice } from '@reduxjs/toolkit'
-import avatar from '../../assets/img/avatar.jpg'
+import wakanda from '../../assets/img/Chien-binh-ao-den.jpg'
+import trotanrucro from '../../assets/img/tro-tan-ruc-ro.jpg'
+import crocodile from '../../assets/img/crocodile.jpg'
 import onepiece from '../../assets/img/onepiece.jpg'
-import pussInBoots from '../../assets/img/pussInBoots.jpg'
+import demhungtan from '../../assets/img/dem-hung-tan.jpg'
+import hanhphucmau from '../../assets/img/hanh-phuc-mau.jpg'
 
 const initialState = {
     data: [
         {
             maBanner: 1,
-            link: 'https://www.youtube.com/watch?v=rcpuVDA9JPY',
-            img: avatar
+            title: "Chiến binh Báo Đen: Wakanda bất diệt",
+            link: 'https://www.youtube.com/embed/QTHEmyoKUyA',
+            img: wakanda,
         },
         {
             maBanner: 2,
-            link: 'https://www.youtube.com/watch?v=7Ma1uab-bQM&t=4s',
-            img: onepiece
+            title: "Tro Tàn Rực Rỡ",
+            link: 'https://www.youtube.com/embed/nAsKoWNgIWA',
+            img: trotanrucro,
         },
         {
             maBanner: 3,
-            link: 'https://www.youtube.com/watch?v=fovTZDDPgAQ',
-            img: pussInBoots
+            title: "Lyle - Chú Cá Sấu Biết Hát",
+            link: 'https://www.youtube.com/embed/J14BfxOUxIs',
+            img: crocodile,
+        },
+        {
+            maBanner: 4,
+            title: "Đảo Hải Tặc",
+            link: 'https://www.youtube.com/embed/L-aFL-bX1ao',
+            img: onepiece,
+        },
+        {
+            maBanner: 5,
+            title: "Đêm Hung Tàn",
+            link: 'https://www.youtube.com/embed/e1gwKLSRDCs',
+            img: demhungtan,
+        },
+        {
+            maBanner: 6,
+            title: "Hạnh Phúc Máu",
+            link: 'https://www.youtube.com/embed/_VQqMUKMBKQ',
+            img: hanhphucmau,
         },
     ],
     modalData: ''
