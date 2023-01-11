@@ -71,7 +71,7 @@ export default () => {
                                 <img src={`https://i.pravatar.cc/150?u=${getLocalStorage(LOCALSTORAGE_USER).taiKhoan}`} className="w-10 h-10 border rounded-full" />
                             </div>
                             <div>
-                                <h5 className='m-0 pl-2 text-center'>{getLocalStorage(LOCALSTORAGE_USER).taiKhoan}</h5>
+                                <h5 className='pl-2 m-0 text-center'>{getLocalStorage(LOCALSTORAGE_USER).taiKhoan}</h5>
                             </div>
                         </NavLink>
                         <Tooltip placement="bottom" title={text}>
@@ -92,41 +92,41 @@ export default () => {
                                         navigate('/')
                                     }
                                 })
-                            }} className='flex justify-center mt-2 items-center border-none ml-2'>
+                            }} className='flex items-center justify-center mt-2 ml-2 border-none'>
                                 <FontAwesomeIcon className='w-8 h-8' icon={faArrowRightFromBracket} />
                             </NavLink>
                         </Tooltip>
                     </> : <>
-                        <div className='text-gray-500 hover:text-red-600 flex items-center mb-4'>
+                        <div className='flex items-center mb-4 text-gray-500 hover:text-red-600'>
                             <FontAwesomeIcon className='w-5 h-5 mr-1' icon={faCircleUser} />
                             <NavLink to='login' className='text-base font-semibold text-gray-500 hover:text-red-600'>Đăng Nhập</NavLink>
                         </div>
-                        <div className='text-gray-500 hover:text-red-600 flex items-center mb-4'>
+                        <div className='flex items-center mb-4 text-gray-500 hover:text-red-600'>
                             <FontAwesomeIcon className='w-5 h-5 mr-1' icon={faCircleUser} />
                             <NavLink to='register' className='text-base font-semibold text-gray-500 hover:text-red-600'>Đăng Ký</NavLink>
                         </div>
                     </>}
                 </div>
                 <hr />
-                <ul className="list-reset justify-center flex-1 items-center mt-2">
+                <ul className="items-center justify-center flex-1 mt-2 list-reset">
                     <li className="mr-3">
-                        <NavLink to='/' className="block py-2 px-4 text-black font-medium text-base hover:text-red-600 no-underline" >Danh sách phim</NavLink>
+                        <NavLink to='/' className="block px-4 py-2 text-base font-medium text-black no-underline hover:text-red-600" >Danh sách phim</NavLink>
                     </li>
                     <li className="mr-3">
                         <NavLink className="block px-4 py-2 text-base font-medium text-black no-underline hover:text-red-600 hover:text-underline"
                             to='/'>Cụm rạp</NavLink>
                     </li>
                     <li className="mr-3">
-                        <NavLink className="block no-underline text-black font-medium text-base hover:text-red-600 hover:text-underline py-2 px-4"
-                            to='news'>Tin tức</NavLink>
+                        <NavLink className="block px-4 py-2 text-base font-medium text-black no-underline hover:text-red-600 hover:text-underline"
+                            to='/'>Tin tức</NavLink>
                     </li>
 
                 </ul>
             </Drawer>
 
-            <header className="bg-gray-400 font-sans leading-normal tracking-normal">
-                <nav style={{ borderBottom: '1px solid #c1c0c04a' }} id='navBarHeader' className="transition-all duration-500 flex items-center justify-between flex-wrap bg-white py-2 px-4 fixed w-full z-10 top-0">
-                    <div className="flex items-center flex-shrink-0 text-white mr-4">
+            <header className="font-sans leading-normal tracking-normal bg-gray-400">
+                <nav style={{ borderBottom: '1px solid #c1c0c04a' }} id='navBarHeader' className="fixed top-0 z-10 flex flex-wrap items-center justify-between w-full px-4 py-2 transition-all duration-500 bg-white">
+                    <div className="flex items-center flex-shrink-0 mr-4 text-white">
                         <NavLink to='/' aria-label="Back to homepage" className="flex items-center">
 
                             <img src={logoNetflix} width={150} />
@@ -134,41 +134,41 @@ export default () => {
                     </div>
                     <div className="block lg:hidden">
                         <button onClick={showDrawer} id="nav-toggle"
-                            className="flex items-center px-3 py-2 border rounded text-gray-500 border-orange-500">
-                            <svg className="fill-current h-4 w-4 text-orange-500" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            className="flex items-center px-3 py-2 text-gray-500 border border-orange-500 rounded">
+                            <svg className="w-4 h-4 text-orange-500 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <title>Menu</title>
                                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
                             </svg>
                         </button>
                     </div>
-                    <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden  pt-3 lg:pt-0"
+                    <div className="flex-grow hidden w-full pt-3 lg:flex lg:items-center lg:w-auto lg:pt-0"
                         id="nav-content">
-                        <ul className="list-reset lg:flex justify-center flex-1 items-center mb-0">
+                        <ul className="items-center justify-center flex-1 mb-0 list-reset lg:flex">
                             <li className="mr-3">
-                                <Link to='/#movie-list' className="inline-block py-2 px-4 text-black font-medium md:text-base hover:text-red-600 no-underline" >Phim</Link>
+                                <Link to='/#movie-list' className="inline-block px-4 py-2 font-medium text-black no-underline md:text-base hover:text-red-600" >Phim</Link>
                             </li>
                             <li className="mr-3">
-                                <Link className="inline-block no-underline text-black font-medium md:text-base hover:text-red-600 hover:text-underline py-2 px-4"
+                                <Link className="inline-block px-4 py-2 font-medium text-black no-underline md:text-base hover:text-red-600 hover:text-underline"
                                     to="/#menuCinema">Cụm rạp</Link>
                             </li>
                             <li className="mr-3">
-                                <NavLink className="inline-block no-underline text-black font-medium md:text-base hover:text-red-600 hover:text-underline py-2 px-4"
+                                <NavLink className="inline-block px-4 py-2 font-medium text-black no-underline md:text-base hover:text-red-600 hover:text-underline"
                                     to='/#news'>Tin tức</NavLink>
                             </li>
                             <li className="mr-3">
-                                <NavLink className="inline-block no-underline text-black font-medium md:text-base hover:text-red-600 hover:text-underline py-2 px-4"
+                                <NavLink className="inline-block px-4 py-2 font-medium text-black no-underline md:text-base hover:text-red-600 hover:text-underline"
                                     to='/#aboutapp'>Ứng dụng</NavLink>
                             </li>
                         </ul>
                         <div className='flex text-gray-500'>
                             {isLogin ? <>
-                                <NavLink to='/inforUser' className="flex flex-row items-center justify-center border-r-2 border-gray-300 pr-2">
+                                <NavLink to='/inforUser' className="flex flex-row items-center justify-center pr-2 border-r-2 border-gray-300">
                                     <div className="relative">
                                         <span className="absolute bottom-0 right-0 w-4 h-4 bg-green-600 border rounded-full border-gray-50" />
                                         <img src={`https://i.pravatar.cc/150?u=${getLocalStorage(LOCALSTORAGE_USER).taiKhoan}`} className="w-10 h-10 border rounded-full" />
                                     </div>
                                     <div>
-                                        <h5 className='m-0 pl-2 text-center'>{getLocalStorage(LOCALSTORAGE_USER).taiKhoan}</h5>
+                                        <h5 className='pl-2 m-0 text-center'>{getLocalStorage(LOCALSTORAGE_USER).taiKhoan}</h5>
                                     </div>
                                 </NavLink>
                                 <Tooltip placement="bottomRight" title={text}>
@@ -190,13 +190,13 @@ export default () => {
                                             }
                                         })
 
-                                    }} className='border flex items-center border-none ml-2'>
+                                    }} className='flex items-center ml-2 border border-none'>
                                         <FontAwesomeIcon className='w-8 h-8' icon={faArrowRightFromBracket} />
                                     </NavLink>
                                 </Tooltip>
                             </> : <>
-                                <NavLink to='login' className=' mr-2 text-gray-500 hover:text-red-600 text-sm font-semibold border-orange-500 border-2 py-2 px-3 rounded-lg'>Đăng Nhập</NavLink>
-                                <NavLink to='register' className='text-gray-500 hover:text-red-600 text-sm font-semibold border-orange-500 border-2 py-2 px-3 rounded-lg'>Đăng Ký</NavLink>
+                                <NavLink to='login' className='px-3 py-2 mr-2 text-sm font-semibold text-gray-500 border-2 border-orange-500 rounded-lg hover:text-red-600'>Đăng Nhập</NavLink>
+                                <NavLink to='register' className='px-3 py-2 text-sm font-semibold text-gray-500 border-2 border-orange-500 rounded-lg hover:text-red-600'>Đăng Ký</NavLink>
                             </>}
                         </div>
                     </div>

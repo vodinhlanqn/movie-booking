@@ -4,7 +4,7 @@ import { Tabs } from 'antd'
 
 export default function News() {
     const dienAnh = () => {
-        return <div className='md:my-[3rem] my-[0.5rem] md:w-[80%] mx-auto' id='news'>
+        return <div className='md:my-[3rem] my-[0.5rem] md:w-[80%] mx-auto'>
             <div className='md:flex'>
                 <div className='md:w-[50%] p-4'>
                     <img className='w-full' src="https://s3img.vcdn.vn/123phim/2020/07/tenet-cong-bo-ngay-khoi-chieu-chinh-thuc-tai-viet-nam-15959320391357.png" alt="" />
@@ -24,12 +24,12 @@ export default function News() {
             <div className='md:flex'>
                 <div className='p-4 md:w-[33%]'>
                     <img className='w-full' src="https://s3img.vcdn.vn/123phim/2020/07/gerard-butler-cung-bo-cu-deadpool-tham-gia-greenland-15937528932506.png" alt="" />
-                    <h2 className='font-bold my-2'>TENET công bố ngày khởi chiếu chính thức tại Việt Nam</h2>
+                    <h2 className='my-2 font-bold'>TENET công bố ngày khởi chiếu chính thức tại Việt Nam</h2>
                     <p>Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra thông báo chính thức về ngày khởi chiếu cho bom tấn TENET tại các thị trường bên ngoài Bắc Mỹ, trong đó có Việt Nam.</p>
                 </div>
                 <div className='p-4 md:w-[33%]'>
                     <img className='w-full' src="https://s3img.vcdn.vn/123phim/2020/07/dien-vien-dac-biet-cua-bang-chung-vo-hinh-15937518743844.png" alt="" />
-                    <h2 className='font-bold my-2'>TENET công bố ngày khởi chiếu chính thức tại Việt Nam</h2>
+                    <h2 className='my-2 font-bold'>TENET công bố ngày khởi chiếu chính thức tại Việt Nam</h2>
                     <p>Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra thông báo chính thức về ngày khởi chiếu cho bom tấn TENET tại các thị trường bên ngoài Bắc Mỹ, trong đó có Việt Nam.</p>
                 </div>
                 <div className='p-4 md:w-[33%]'>
@@ -74,12 +74,12 @@ export default function News() {
             <div className='md:flex'>
                 <div className='p-4 md:w-[33%]'>
                     <img className='w-full' src="https://s3img.vcdn.vn/123phim/2020/02/review-ke-vo-hinh-con-gi-dang-so-hon-ke-giet-nguoi-benh-hoan-vo-hinh-15828835353362.jpg" alt="" />
-                    <h2 className='font-bold my-2'>[Review] Kẻ Vô Hình - Còn gì đáng sợ hơn kẻ giết người bệnh hoạn vô hình?</h2>
+                    <h2 className='my-2 font-bold'>[Review] Kẻ Vô Hình - Còn gì đáng sợ hơn kẻ giết người bệnh hoạn vô hình?</h2>
                     <p>Phiên bản hiện đại của The Invisible Man là một trong những phim kinh dị xuất sắc nhất năm nay.</p>
                 </div>
                 <div className='p-4 md:w-[33%]'>
                     <img className='w-full' src="https://s3img.vcdn.vn/123phim/2020/02/review-cau-be-ma-2-ban-trai-cua-be-beo-la-day-chu-dau-xa-15823608583110.jpg" alt="" />
-                    <h2 className='font-bold my-2'>[Review] Cậu Bé Ma 2 - Bạn trai của 'bé Beo' là đây chứ đâu xa</h2>
+                    <h2 className='my-2 font-bold'>[Review] Cậu Bé Ma 2 - Bạn trai của 'bé Beo' là đây chứ đâu xa</h2>
                     <p>Brahms: The Boy II có những màn hù dọa ấn tượng nhưng cái kết lại không tương xứng với phần mở đầu hứa hẹn.</p>
                 </div>
                 <div className='p-4 md:w-[33%]'>
@@ -124,12 +124,12 @@ export default function News() {
             <div className='md:flex'>
                 <div className='p-4 md:w-[33%]'>
                     <img className='w-full' src="https://s3img.vcdn.vn/123phim/2019/05/123phim-tixshop-tro-lai-qua-xin-hon-xua-15583511037699.jpg" alt="" />
-                    <h2 className='font-bold my-2'>[123Phim] TixShop trở lại, quà ‘xịn’ hơn xưa</h2>
+                    <h2 className='my-2 font-bold'>[123Phim] TixShop trở lại, quà ‘xịn’ hơn xưa</h2>
                     <p>Nhiều Tix làm gì, để tiêu vào TixShop chứ còn chờ chi.</p>
                 </div>
                 <div className='p-4 md:w-[33%]'>
                     <img className='w-full' src="https://s3img.vcdn.vn/123phim/2019/05/galaxy-trang-thi-xem-phim-hay-say-qua-tang-15572160162243.jpg" alt="" />
-                    <h2 className='font-bold my-2'>[Galaxy Tràng Thi] Xem Phim Hay, Say Quà Tặng</h2>
+                    <h2 className='my-2 font-bold'>[Galaxy Tràng Thi] Xem Phim Hay, Say Quà Tặng</h2>
                     <p>Nhân dịp khai trương Galaxy Tràng Thi, Galaxy Cinema dành tặng các Stars Hà Nội loạt phần quà siêu hấp dẫn.</p>
                 </div>
                 <div className='p-4 md:w-[33%]'>
@@ -158,7 +158,7 @@ export default function News() {
         { label: <h2 className='text-[14px] md:text-[18px] uppercase font-medium'>Review</h2>, key: 'item-2', children: review() },
         { label: <h2 className='text-[14px] md:text-[18px] uppercase font-medium'>Khuyến mãi</h2>, key: 'item-3', children: promotion() },
     ];
-    return <div className='news mt-[6rem] h-full '>
+    return <div className='news mt-[6rem] h-full ' id='news'>
         <Tabs centered items={items} />
     </div>;
 }

@@ -5,8 +5,8 @@ export default function Dashboard() {
 	const nameAdmin = getLocalStorage('USER')
 	return (
 		<>
-			<h2 className='text-center font-bold text-2xl'>Xin chào: <span className='text-orange-600'>{nameAdmin.hoTen}</span></h2>
-			<div className='flex justify-center items-center h-full'>
+			<h2 className='text-2xl font-bold text-center'>Xin chào: <span className='text-orange-600'>{nameAdmin.hoTen}</span></h2>
+			{/* <div className='flex items-center justify-center h-full'>
 				<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" style={{ margin: 'auto', background: '#fff', display: 'block' }} width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
 					<g>
 						<animateTransform attributeName="transform" type="rotate" values="360 50 50;0 50 50" keyTimes="0;1" dur="1s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1" begin="-0.1s" />
@@ -173,7 +173,7 @@ export default function Dashboard() {
 						<path fill="#000000" d="M90.7,33.2c0.2,0.5,0,1.1-0.5,1.3c-0.5,0.2-1.1-0.1-1.3-0.6c-0.2-0.5,0-1.1,0.5-1.3C89.9,32.4,90.5,32.7,90.7,33.2z" />
 					</g>
 				</svg>
-			</div>
+			</div> */}
 		</>
 
 	)
